@@ -27,7 +27,7 @@ class anasayfa extends StatelessWidget {
           children: <Widget>[
             Center(
                 child: Container(
-              padding: EdgeInsets.only(bottom: 115),
+              padding: EdgeInsets.only(bottom: 120),
               child: Image(
                 image: AssetImage("images/dijidef.png"),
               ),
@@ -51,7 +51,7 @@ class anasayfa extends StatelessWidget {
                           child: Text("9.Sınıf",
                               style: TextStyle(
                                 fontStyle: FontStyle.normal,
-                                fontSize: 48,
+                                fontSize: 40,
                                 color: Colors.white,
                               )),
                         ),
@@ -75,7 +75,7 @@ class anasayfa extends StatelessWidget {
                           child: Text("10.Sınıf",
                               style: TextStyle(
                                 fontStyle: FontStyle.normal,
-                                fontSize: 48,
+                                fontSize: 40,
                                 color: Colors.white,
                               )),
                         ),
@@ -100,7 +100,7 @@ class anasayfa extends StatelessWidget {
                     child: Text("Defterim",
                         style: TextStyle(
                           fontStyle: FontStyle.normal,
-                          fontSize: 70,
+                          fontSize: 50,
                           color: Colors.white,
                         )),
                   ),

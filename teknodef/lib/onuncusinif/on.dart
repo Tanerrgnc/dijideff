@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:teknodef/main.dart';
-import 'package:teknodef/anasayfa.dart';
-import 'package:teknodef/onuncusinif/onKTD/mat.dart';
-import 'package:teknodef/onuncusinif/onKTD/trkce.dart';
-import 'package:teknodef/onuncusinif/onKTD/ing.dart';
-import 'package:teknodef/onuncusinif/onKTD/fzk.dart';
-import 'package:teknodef/onuncusinif/onKTD/kmya.dart';
-import 'package:teknodef/onuncusinif/onKTD/bylji.dart';
-import 'package:teknodef/onuncusinif/onKTD/cgrfya.dart';
-import 'package:teknodef/onuncusinif/onKTD/din.dart';
-import 'package:teknodef/onuncusinif/onKTD/tarih.dart';
-import 'package:teknodef/onuncusinif/onKTD/osm.dart';
-import 'package:teknodef/onuncusinif/onKTD/flsfe.dart';
-import 'package:teknodef/onuncusinif/onKTD/tarih.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/biyoloji/konu_test/biyoloji_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/cografya/konu_test/cografya_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/din/konu_test/din_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/felsefe/konu_test/felsefe_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/fizik/konu_test/fizik_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/ingilizce/konu_test/ingilizce_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/kimya/konu_test/kimya_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/matematik/konu_test/mat_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/tarih/konu_test/tarih_KT.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/turkce/konu_test/turkce_KT.dart';
 
 class Sayfa3 extends StatelessWidget {
   @override
@@ -65,7 +62,7 @@ class Sayfa3 extends StatelessWidget {
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => O_matematik_KTD()),
+                          builder: (context) => O_mat_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -86,12 +83,12 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_turkce_KTD()),
+                      MaterialPageRoute(builder: (context) => O_turkce_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
                           left: 20, right: 20, top: 15, bottom: 15),
-                      child: Text("Türk dili ve edebiyatı",
+                      child: Text("Türk Dili ve Edebiyatı",
                           style: TextStyle(
                               fontStyle: FontStyle.normal, fontSize: 30)),
                     ),
@@ -107,7 +104,7 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_fizik_KTD()),
+                      MaterialPageRoute(builder: (context) => O_fizik_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -129,7 +126,7 @@ class Sayfa3 extends StatelessWidget {
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => O_ingilizce_KTD()),
+                          builder: (context) => O_ingilizce_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -150,7 +147,7 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_kimya_KTD()),
+                      MaterialPageRoute(builder: (context) => O_kimya_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -192,7 +189,7 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_cografya_KTD()),
+                      MaterialPageRoute(builder: (context) => O_cografya_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -213,7 +210,7 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_felsefe_KTD()),
+                      MaterialPageRoute(builder: (context) => O_felsefe_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
@@ -234,34 +231,12 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_din_KTD()),
+                      MaterialPageRoute(builder: (context) => O_din_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(
                           left: 82, right: 82, top: 15, bottom: 15),
-                      child: Text("Din kültürü",
-                          style: TextStyle(
-                              fontStyle: FontStyle.normal, fontSize: 30)),
-                    ),
-                    color: Color.fromARGB(255, 223, 223, 223),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  margin: EdgeInsets.only(top: 20),
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)),
-                    onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => O_osmanlica_KTD()),
-                    ),
-                    child: Container(
-                      padding: EdgeInsets.only(
-                          left: 85, right: 85, top: 15, bottom: 15),
-                      child: Text("Osmanlıca",
+                      child: Text("Din Kültürü",
                           style: TextStyle(
                               fontStyle: FontStyle.normal, fontSize: 30)),
                     ),
@@ -277,7 +252,7 @@ class Sayfa3 extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50)),
                     onPressed: () => Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => O_tarih_KTD()),
+                      MaterialPageRoute(builder: (context) => O_tarih_KT()),
                     ),
                     child: Container(
                       padding: EdgeInsets.only(

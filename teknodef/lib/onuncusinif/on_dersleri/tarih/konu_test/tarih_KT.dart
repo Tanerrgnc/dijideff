@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:teknodef/dokuzuncusinif/dokuz_dersleri/cografya/cografya_konu_anlatimi.dart';
-import 'package:teknodef/dokuzuncusinif/dokuz_dersleri/cografya/web_test/alternatif_testler.dart';
-import 'package:teknodef/main.dart';
-
-class D_cografya_KTD extends StatelessWidget {
+import 'package:teknodef/anasayfa.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/tarih/tarih_konu_anlatimi.dart';
+import 'package:teknodef/onuncusinif/on_dersleri/tarih/web_test/alternatif_test.dart';
+class O_tarih_KT extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 255, 255, 255),
       appBar: AppBar(
-        title: Text("Coğrafya",
+        title: Text("Tarih",
             style: TextStyle(
                 fontStyle: FontStyle.normal,
-                fontSize: 40,
+                fontSize: 29,
                 color: Colors.white)),
         centerTitle: true,
         backgroundColor: Color.fromARGB(255, 29, 85, 168),
@@ -28,20 +27,21 @@ class D_cografya_KTD extends StatelessWidget {
             ),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Sayfa1()),
+              MaterialPageRoute(builder: (context) => anasayfa()),
             ),
           ),
         ],
       ),
-      body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: <
-          Widget>[
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
         Center(
           child: RaisedButton(
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => D_cografya_K()),
+              MaterialPageRoute(builder: (context) => O_tarih_K()),
             ),
             child: Container(
               padding: EdgeInsets.only(left: 1, right: 1, top: 60, bottom: 60),
@@ -60,7 +60,7 @@ class D_cografya_KTD extends StatelessWidget {
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
             onPressed: () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => alternatif_cografya()),
+              MaterialPageRoute(builder: (context) => Tarih_test_ekrani()),
             ),
             child: Container(
               padding:
